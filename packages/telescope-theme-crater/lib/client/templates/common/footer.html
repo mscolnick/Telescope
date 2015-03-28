@@ -1,0 +1,16 @@
+<template name="craterFooter">
+  {{#each footerModules}}
+    {{> UI.dynamic template=getTemplate}}
+  {{/each}}
+
+  {{#if footerCode}}
+    <div class="{{footerClass}}">
+      {{{footerCode}}}
+    </div>
+  {{/if}}
+
+  <footer id="main-footer">
+    Megaphone &copy; 2015
+  </footer>
+
+</template>

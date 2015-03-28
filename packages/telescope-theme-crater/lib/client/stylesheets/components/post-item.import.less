@@ -1,0 +1,143 @@
+.post {
+  .clearfix();
+  margin-bottom: 24px;
+  position: relative;
+
+  .post-module {
+    vertical-align: middle;
+  }
+  .post-upvote {
+    float: left;
+    width: 50px;
+    margin-right: 16px;
+  }
+  .post-content {
+    width: 70%;
+    float: left;
+  }
+  .post-avatars {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+  }
+  .post-discuss {
+    position: absolute;
+    right: 0;
+  }
+  .post-actions {
+    display: none;
+  }
+}
+
+.post-rank {
+  margin-top: -6px;
+}
+
+.post-upvote {
+  .btn {
+    width: 46px;
+    height: 57px;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    color: @text-color;
+    font-family: @font-family-sans-serif;
+
+    .icon {
+      font-size: 24px;
+      display: block;
+      width: 14px;
+      height: 36px;
+      line-height: 36px;
+      margin: 2px auto 0 auto;
+    }
+
+    &:hover {
+      background: @brand-secondary;
+      color: #fff;
+    }
+
+    &.voted {
+      color: #fff;
+
+      .icon {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+h3.post-heading {
+  font-weight: 500;
+  color: @text-color;
+  font-size: 22px;
+  margin: 0 0 6px 0;
+
+  a.post-title {
+    color: @text-color;
+
+    &:hover, &:visited {
+      color: @brand-primary;
+    }
+  }
+}
+
+.post-meta {
+  color: @code-color;
+  font-weight: 100;
+  font-size: 14px;
+
+  a {
+    color: @code-color;
+
+    &:hover {
+      border-bottom: 1px solid @code-color;
+    }
+  }
+
+  div, span {
+    display: inline-block;
+  }
+}
+
+.post-meta-item {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+
+.posts-wrapper .post-share {
+  display: none;
+}
+
+.discuss-link {
+  line-height: 57px;
+  color: @brand-primary;
+
+  i.icon {
+    font-size: 36px;
+    vertical-align: middle;
+  }
+  .count {
+    font-size: 18px;
+  }
+}
+
+.post-thumbnail-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  border-radius: 100%;
+  height: 60px;
+  border: 1px solid #9caeda;
+  float: left;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.post-thumbnail-image {
+  min-width: 100%;
+  height: 100%;
+  display: block;
+}
